@@ -109,7 +109,7 @@ end
 
 def play(board)
   until over?(board)
-    move(board, index, char="X")
+    turn(board)
   end
   if won?(board)
     puts "Congratulations #{winner(board)}"
